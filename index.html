@@ -13,7 +13,6 @@
             font-style: normal;
         }
 
-
         body {
             font-family: 'Carmen Sans', sans-serif;
             margin: 0;
@@ -25,23 +24,32 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
         .container {
-            text-align: center;
-            max-width: 600px;
+            display: flex;
+            align-items: center;
+            max-width: 800px;
             padding: 20px;
         }
-        h1 {
+
+        .text {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .text h1 {
             font-size: 2.5em;
             margin: 0.5em 0;
         }
-        p {
-            font-family: 'Carmen Sans', sans-serif;
-            font-size: 1.2em;
-            margin: 0.5em 0;
-            font-weight: 100; /* Light font weight */
 
+        .text p {
+            font-family: 'Carmen Sans', sans-serif;
+            font-size: 1em;
+            margin: 0.5em 0;
+            font-weight: 50; /* Light font weight */
         }
-        a {
+
+        .text a {
             display: inline-block;
             margin-top: 1em;
             text-decoration: none;
@@ -50,17 +58,34 @@
             font-size: 1.2em;
             border-bottom: 2px solid transparent;
         }
-        a:hover {
+
+        .text a:hover {
             border-bottom: 2px solid #0073e6;
+        }
+
+        .photo {
+            flex: 1;
+        }
+
+        .photo img {
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes the photo circular */
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Alireza AmaniHamedani</h1>
-        <p>Phd candidate.</p>
-        <p>Optional: A short paragraph about yourself or your work. Keep it concise.</p>
-        <a href="mailto:your.email@example.com">Contact Me at aamanihamedani@london.edu</a>
+        <div class="text">
+            <h1>Alireza AmaniHamedani</h1>
+            <p>PhD Candidate.</p>
+            <p>Optional: A short paragraph about yourself or your work. Keep it concise.</p>
+            <a href="mailto:aamanihamedani@london.edu">Contact Me at aamanihamedani@london.edu</a>
+        </div>
+        <div class="photo">
+            <img src="photo.jpg" alt="Your Photo">
+        </div>
     </div>
 </body>
 </html>

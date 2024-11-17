@@ -81,3 +81,25 @@ footer {
     background: #f4f4f4;
     color: #555;
 }
+
+.section-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .paper {
+            margin-bottom: 1.5rem;
+        }
+        .new-version {
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .paper-title {
+            font-style: italic;
+            font-size: 1rem;
+        }
+        .paper-meta {
+            font-style: italic;
+            color: gray;
+        }

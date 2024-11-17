@@ -11,21 +11,33 @@ body {
 }
 
 header {
-    background: #004080;
-    color: #fff;
-    padding: 1rem 0;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+header h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    font-weight: 400;
+}
+header h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    font-weight: 330;
 }
 
-header .container {
+
+/* header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-header h1 {
+ */
+/* header h1 {
     font-size: 1.5rem;
 }
-
+ */
 header nav ul {
     list-style: none;
     display: flex;
@@ -50,11 +62,11 @@ header nav ul li a {
     margin: 0 auto;
 }
 
-h2 {
+/* h2 {
     margin-bottom: 1rem;
     color: #004080;
 }
-
+ */
 ul {
     list-style: disc;
     margin-left: 20px;

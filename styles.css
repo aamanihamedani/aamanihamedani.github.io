@@ -103,3 +103,17 @@ footer {
             font-style: italic;
             color: gray;
         }
+
+        nav a {
+            margin-top: 100px; /* Add space between h2 and navigation */
+            margin: 0 40px; /* Increase spacing between links */
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #0073e6;
+        }
+

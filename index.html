@@ -8,13 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         
     <style>
-/*         @font-face {
-            font-family: 'Carmen Sans';
-            src: url('fonts/carmen-sans-7.woff2') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
- */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -28,76 +21,27 @@
             color: #333;
         }
 
-
         header {
-            font-family: 'Montserrat', sans-serif;
             text-align: center;
             margin-top: 20px;
+            padding: 0 20px;
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0.5em 0;
             font-weight: 400;
         }
+
         header h2 {
             font-size: 1.2em;
             margin: 0.5em 0;
-            font-weight: 330;
-            margin-bottom: 40px;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            max-width: 800px;
-            padding: 20px;
-        }
-
-        .text {
-            flex: 2;
-            margin-right: 20px;
-        }
-
-        .text p {
-            font-size: 1.1em;
-            margin: 0.5em 0;
-            font-weight: 350; /* Light font weight */
-        }
-
-        .text a {
-            display: inline-block;
-            margin-top: 1em;
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: 350;
-            font-size: 1.2em;
-            border-bottom: 2px solid transparent;
-        }
-        a.inline-link {
-            font-size: inherit;
-            color: #0073e6;
-            line-height: inherit;
-            padding: 0;
-            margin: 0;
-        }
-        .text a:hover {
-            border-bottom: 2px solid #0073e6;
-        }
-
-        .photo {
-            flex: 1;
-        }
-
-        .photo img {
-            width: 200px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: cover;
+            font-weight: 300;
+            margin-bottom: 30px;
         }
 
         nav a {
-            margin-top: 100px; /* Add space between h2 and navigation */
-            margin: 0 40px; /* Increase spacing between links */
+            margin: 0 20px;
             text-decoration: none;
             color: #0073e6;
             font-weight: 500;
@@ -108,6 +52,99 @@
             border-bottom: 2px solid #0073e6;
         }
 
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+            align-items: center;
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto; /* Center content */
+        }
+
+        .text {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .text p {
+            font-size: 1em;
+            margin: 0.5em 0;
+            font-weight: 350; /* Light font weight */
+        }
+
+        .text a {
+            display: inline-block;
+            margin-top: 1em;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: 350;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+        }
+
+        .text a:hover {
+            border-bottom: 2px solid #0073e6;
+        }
+
+        .photo {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 20px; /* Space for mobile view */
+        }
+
+        .photo img {
+            width: 100%; /* Responsive width */
+            max-width: 200px; /* Limit image size */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+
+            .container {
+                flex-direction: column; /* Stack elements vertically */
+                text-align: center; /* Center-align text on small screens */
+            }
+
+            .text {
+                margin: 0;
+            }
+
+            .photo img {
+                max-width: 150px; /* Slightly smaller for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header h2 {
+                font-size: 0.9em;
+            }
+
+            nav a {
+                font-size: 0.8em;
+            }
+
+            .photo img {
+                max-width: 120px; /* Smaller image for very small devices */
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,15 +162,14 @@
             <img src="photo.jpg" alt="Your Photo">
         </div>
         <div class="text">
-    <p>
-    I am a PhD candidate in Management Science and Operations Research at London Business School. 
-    I am very fortunate to be advised by <a href="https://www.aaouad.com" target="_blank" class="inline-link">Prof. Ali Aouad</a>.
-</p>
-<p>
-    My research is at the intersection of (data-driven and online) optimization, stochastic modeling, and market design. 
-    Please refer to <a href="research.html" target="_self" class="inline-link">this page</a> for more information and a list of my papers.
-</p>
-
+            <p>
+                I am a PhD candidate in Management Science and Operations Research at London Business School. 
+                I am very fortunate to be advised by <a href="https://www.aaouad.com" target="_blank" class="inline-link">Prof. Ali Aouad</a>.
+            </p>
+            <p>
+                My research is at the intersection of (data-driven and online) optimization, stochastic modeling, and market design. 
+                Please refer to <a href="research.html" target="_self" class="inline-link">this page</a> for more information and a list of my papers.
+            </p>
             <a href="mailto:aamanihamedani@london.edu">Please feel free to contact me at aamanihamedani@london.edu.</a>
         </div>
     </div>

@@ -3,11 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Your Name - Brief Description">
+    <title>Alireza AmaniHamedani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+            font-weight: 400;
+        }
+
+        header h2 {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #0073e6;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+            align-items: center;
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto; /* Center content */
+        }
+
+        .text {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .text p {
+            font-size: 1em;
+            margin: 0.5em 0;
+            font-weight: 350; /* Light font weight */
+        }
+
+        .text a {
+            display: inline-block;
+            margin-top: 1em;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: 350;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+        }
+        a.inline-link {
+            font-size: inherit;
+            color: #0073e6;
+            line-height: inherit;
+            padding: 0;
+            margin: 0;
+        }
+        
+
+        .text a:hover {
+            border-bottom: 2px solid #0073e6;
+        }
+
+        .photo {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 20px; /* Space for mobile view */
+        }
+
+        .photo img {
+            width: 100%; /* Responsive width */
+            max-width: 200px; /* Limit image size */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+
+            .container {
+                flex-direction: column; /* Stack elements vertically */
+                text-align: center; /* Center-align text on small screens */
+            }
+
+            .text {
+                margin: 0;
+            }
+
+            .photo img {
+                max-width: 150px; /* Slightly smaller for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header h2 {
+                font-size: 0.9em;
+            }
+
+            nav a {
+                font-size: 0.8em;
+            }
+
+            .photo img {
+                max-width: 120px; /* Smaller image for very small devices */
+            }
+        }
+        
+    </style>
 </head>
 <body>
-        <header>
+    <header>
         <h1>Alireza AmaniHamedani</h1>
         <h2> PhD Candidate, Management Science & Operations Research, London Business School </h2>
         <nav>
@@ -16,80 +166,21 @@
             <a href="cv.pdf">CV</a>
         </nav>
     </header>
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <p>
-                    My research combines tools from online optimization, stochastic modeling, and game theory to (i) analyze and design <u>dynamic</u> matching markets, and (ii) advance data-driven decision making in the algorithmic economy.
-                </p>
-            </div>
-        </section>
-<!-- 
-        <section id="research" class="section">
-            <div class="container">
-                <h2>Papers</h2>
-                <ul>
-                    <li>Topic 1: Description of topic 1.</li>
-                    <li>Topic 2: Description of topic 2.</li>
-                    <li>Topic 3: Description of topic 3.</li>
-                </ul>
-            </div>
-        </section> -->
-<!--         <section id="publications" class="section">
-            <div class="container">
-                <h2>Publications</h2>
-                <ul>
-                    <li>
-                        <strong>Publication Title 1</strong> <br>
-                        <em>Journal Name, Year</em> <br>
-                        Brief description or abstract.
-                    </li>
-                    <li>
-                        <strong>Publication Title 2</strong> <br>
-                        <em>Conference Name, Year</em> <br>
-                        Brief description or abstract.
-                    </li>
-                    <!-- Add more publications as needed -->
-                </ul>
-            </div>
-        </section> -->
-    <section>
-        <div class="section-title">Papers</div>
-
-<!--         <div class="paper">
-            <span class="new-version">(new version)</span>
-            <span class="paper-title">"TBS"</span> with TBD.
-            <span class="paper-meta">
-                TBD.
-            </span>
-            [<a href="#abstract1">abstract</a>] [<a href="#draft1">draft</a>]
-        </div> -->
-        <div class="paper">
-            <span class="paper-title">"Adaptive Approximation Schemes for Matching Queues"</span> with Ali Aouad and Amin Saberi, <b>submitted</b>
-<!--             [<a href="#abstract2">abstract</a>]  -->
-            [<a href="#draft2">arXiv</a>]
+    <div class="container">
+        <div class="photo">
+            <img src="photo.jpg" alt="Your Photo">
         </div>
-
-        <div class="paper">
-            <span class="paper-title">"Improved Approximations for Stationary Bipartite Matching:
-Beyond Probabilistic Independence"</span> with Ali Aouad, Tristan Pollner, and Amin Saberi, <b>submitted</b>
-           [<a href="https://arxiv.org/abs/2411.08218">arXiv</a>]
+        <div class="text">
+            <p>
+                I am a PhD candidate in Management Science and Operations Research at London Business School. 
+                I am very fortunate to be advised by <a href="https://www.aaouad.com" target="_blank" class="inline-link">Prof. Ali Aouad</a>.
+            </p>
+            <p>
+                My research is at the intersection of (data-driven and online) optimization, stochastic modeling, and market design. 
+                Please refer to <a href="research.html" target="_self" class="inline-link">this page</a> for more information and a list of my papers.
+            </p>
+            <a href="mailto:aamanihamedani@london.edu">Please feel free to contact me at aamanihamedani@london.edu.</a>
         </div>
-        <div class="paper">
-        <span class="paper-title">"Spatial Matching under Multihoming"</span> with Ali Aouad and Daniel Freund, <b>Operations Research</b> (major revision)
-           [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4488342">SSRN</a>]
-        </div>
-        <div class="paper">
-        <span class="paper-title">"Governance of Social Welfare in Networked Markets"</span> with Mohammadamin Fazli, <b>IEEE Transactions on Computational Social Systems</b>
-           [<a href="https://ieeexplore.ieee.org/document/9989446">published</a>]
-        </div>
-        <div class="paper">
-        <span class="paper-title">"On the maximum order of induced paths and induced forests in regular graphs"</span> with Saeeid Akbari, Sepehr Mousavi, Hessam Nikpey, Soheil Sheybani
-           [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4488342">arXiv</a>]
-        </div>
-    </section>
-        
-    </main>
-
+    </div>
 </body>
 </html>

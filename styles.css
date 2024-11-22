@@ -78,6 +78,7 @@ footer {
 }
 
 .section-title {
+    display: block; /* Ensures it takes up its own line */
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;

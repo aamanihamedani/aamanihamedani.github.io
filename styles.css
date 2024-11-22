@@ -162,7 +162,7 @@ a.inline-link:hover {
 
     .container {
         flex-direction: column; /* Stack elements vertically */
-        text-align: center;
+        text-align: left;
     }
 
     .text a {

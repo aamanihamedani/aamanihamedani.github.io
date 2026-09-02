@@ -107,6 +107,17 @@
             height: auto; /* Maintain aspect ratio */
             object-fit: cover;
         }
+
+        .photo-wrap {
+            display: inline-block; /* Shrink to the image width so the caption lines up */
+        }
+
+        .photo .credit {
+            font-size: 0.7em;
+            font-weight: 300;
+            color: #888;
+            margin: 6px 0 0;
+        }
 /* Recent News Section */
         .recent-news {
             width: 100%;
@@ -237,7 +248,10 @@
     </header>
     <div class="container">
         <div class="photo">
-            <img src="photo.jpg" alt="Your Photo">
+            <div class="photo-wrap">
+                <img src="photo.jpg" alt="Alireza AmaniHamedani">
+                <p class="credit">Photo credit: Amogh Pant.</p>
+            </div>
         </div>
         <div class="text">
             <p>
